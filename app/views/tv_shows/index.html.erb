@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curriculum Vitae Iván Venegas</title>
+        <meta charset="utf-8">
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+</head>
+    <body>
+
+     <header id="header">
+       <%= image_tag('IMG_20200119_211720_790.jpg', size: "64x64", alt: "Iron Man", class: 'mr-3')%>
+         <H1>Antecedentes Personales</H1>
+                <ol>
+                    <li type="circle">Nombre Completo: Iván Cristian Venegas Ávila</li>
+                    <li type="circle">RUN: 19.280.380-2	</li>
+                    <li type="circle">Nacionalidad: Chilena</li>
+                    <li type="circle">Fecha de Nacimiento: 05 de mayo de 1996</li>
+                    <li type="circle">Dirección particular: Melilonco #02456, Pedro de Valdivia</li>
+                    <li type="circle">Teléfono: +569 65788213</li>
+                    <li type="circle">Correo Electrónico: ivan.venegas41@gmail.com</li>
+                </ol>
+            </header>
+        <nav>
+            <a class="a" href="#header">Datos personales</a>
+            <a class="a" href="#descripcion">Sobre mi</a>
+            <a class="a" href="#academico">Formacion</a>
+            <a class="a" href="#laborales">Experiencias</a>
+            <a class="a" href="#descarga">Mi Curriculum</a>
+            <a class="a" href="/welcome">go back to welcome page</a>
+            <a class="a"<%= link_to 'go back to welcome page', welcome_path %></a>
+
+
+</nav>
+
+
+    <div>
+        <article>
+            <section class="seccionextra" id="descripcion">
+                <h2>Descripción</h2>
+                <br>
+                <%= form_with do |form| %>
+                    Form contents
+                  <% end %>
+                <br>
+                <p>Profesional especializado en el campo laboral de la cocina internacional, con experiencias en áreas como la hotelería, restaurantes, casinos y eventos, logre obtener todas las habilidades y competencias requeridas para desempeñar diversas labores dentro de una cocina profesional. Actualmente por motivos de COVID-19 he encontrado experiencias complementarias a mi rubro, como lo es el trabajo en carnicería, área de sanitización y disolución de químicos, y desempeñando tareas de venta.   </p>
+
+
+</section>
+            <section id="academico" class="seccion1">
+                <h2>Antecedentes Academicos</h2>
+                <ol>
+                    <li>Enseñanza Básica: Colegio Polivalente Domingo Matte Mesías 2006 -  2010.</li>
+                    <br>
+                    <li>Enseñanza Media: Colegio Polivalente Domingo Matte Mesías 2011 – 2014.</li>
+                    <br>
+                    <li>Enseñanza Técnica en Gastronomía: Titulado y Egresado del Colegio Polivalente Domingo Matte Mesías 2013 – 2014.</li>
+                    <br>
+                    <li>PSU: Rendida.</li>
+                    <br>
+                    <li>Enseñanza Superior: Egresado de Gastronomía Internacional en Universidad Tecnológica de Chile Inacap  2015 – 2016.</li>
+                    <br>
+                    <li>Curso de productividad persona: Este curso se puede verificar  <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">AQUI </a> con el siguiente codigo: A4D LYN 2QM</li>
+                </ol>
+
+</section>
+            <section id="laborales" class="seccion2">
+                <h2>Antecedentes Laborales</h2>
+                    <h3>Cafetería Melba Costanera:</h3>
+                    <p>Desempeñaba en el cargo de ayudante de cocina entre diciembre de 2014 y febrero de 2015.</p>
+                    <h3>Eladio S.A.:</h3>
+                    <p>Desempeñaba el cargo de ayudante de cocina entre mayo del 2015 a diciembre del 2016.</p>
+                    <h3>Hotel Crowne plaza Santiago 	: </h3>
+                    <p>Desempeñaba el cargo de ayudante de cocina en cuarto caliente y room service entre marzo y agosto del 2017.</p>
+                    <h3>Restaurant Malasaña: </h3>
+                    <p>Desempeñaba el cargo de ayudante de cocina en cuarto caliente entre agosto del 2017 y marzo del 2018.</p>
+                    <h3>Eladio S.A.: </h3>
+                    <p>Desempeñaba el cargo de ayudante de cocina en cuarto caliente, cuarto frio y repostería entre mayo del 2018 y febrero del 2019.</p>
+                    <h3>Best Western Premier Marina las Condes: </h3>
+                    <p>Desempeñaba el cargo de ayudante de cocina en cuarto caliente entre marzo del 2019 y agosto del 2019.</p>
+                    <h3>Torres del Paine:</h3>
+                    <p>Desempeñaba el cargo de ayudante de cocina en distintos lugares durante mi estadía en puerto natales desde septiembre del 2019 y enero del 2020.</p>
+                    <h3>Estacionar: </h3>
+                    <p>Desempeñaba el cargo de operador, trabajo esporádico por pandemia de COVID-19 de abril a junio del 2020</p>
+                    <h3>Supermercados Cugat:</h3>
+                    <p>Dentro de mis responsabilidades estaba brindar servicios de venta y selección de productos de origen animal. Asegurando su calidad e inocuidad. </p>
+                    <h3>Hotel DREAM Araucanía:</h3>
+                    <p>Encargado de Turno en el cual atendía mediante el formato de almuerzos ejecutivos, guiando un equipo de 10 personas a cargo, asegurando el perfecto sabor en las preparaciones, organizando una pre-elaboración de alimentos completa y asegurando la durabilidad de los alimentos y cuidando el buen uso de materias primas. </p>
+</section>
+<section id="descarga" class="seccion3">
+                Descargar
+</section>
+</article>
+</div>
+<footer>
+
+</footer>
+
+
+
+</body>
+
+</html>
+
+<a href="/welcome">go back to welcome page</a>
+
+<%= link_to 'go back to welcome page', welcome_path %>
