@@ -38,8 +38,6 @@
             <section class="seccionextra" id="descripcion">
                 <h2>Descripción</h2>
 <br>
-
-<%= "Mi nombre es: #{ @search || "***ningun dato ingresado***" }" %>
                 <br>
                 <p>Profesional especializado en el campo laboral de la cocina internacional, con experiencias en áreas como la hotelería, restaurantes, casinos y eventos, logre obtener todas las habilidades y competencias requeridas para desempeñar diversas labores dentro de una cocina profesional. Actualmente por motivos de COVID-19 he encontrado experiencias complementarias a mi rubro, como lo es el trabajo en carnicería, área de sanitización y disolución de químicos, y desempeñando tareas de venta.   </p>
 
@@ -94,6 +92,9 @@
     <%= form.date_field :release_date %><br>
     <%= form.number_field :rating, step: '0.1' %><br>
     <%= form.submit  "Enviar" %>
+    <br>
+
+    <%= "Mi nombre es: #{ @search || "***ningun dato ingresado***" }" %>
 <% end %>
 </section>
 </article>
